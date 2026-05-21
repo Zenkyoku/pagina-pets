@@ -1,0 +1,334 @@
+/* style.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/Gemini_Generated_Image_b9gmt0b9gmt0b9gm.png);
+    font-family: 'Cinzel', serif;
+    background-repeat: no-repeat;
+    background-size: 140%;
+}
+
+.contenedor-principal {
+    background: linear-gradient(90deg,rgba(204, 186, 220, 1) 0%,
+     rgba(191, 148, 214, 0.9) 25%,
+      rgba(187, 137, 214, 0.8) 50%,
+       rgba(191, 148, 214, 0.9) 75%,
+        rgba(204, 186, 220, 1) 100%);
+    width: 90%;
+    margin: 45px;
+    justify-self: center;
+    padding: 20px;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 15px 15px #3b3752;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.logo h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;    
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 8px rgba(168, 78, 209, 0.8);
+    color: #201f20;
+}
+
+.logo span{
+    font-size: 14px;
+    color: #666;
+}
+
+nav{
+    display: flex;
+    gap: 25px;
+    margin-left: -100px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #9b5cff;
+}
+
+.profile{
+    border-left: 1px solid #71689C;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img{
+    border-radius: 50%;
+}
+
+/* HERO */
+
+.hero{
+    width: 100%;
+    height: 420px;
+    margin: auto;
+
+    background-image: url("https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/m7/M7HH8J62VVUG1711406860146.png");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    box-shadow: 0px 22px 30px #4e428a;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-content{
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    z-index: 2;
+    text-shadow: 3px 5px #3b0947;
+}
+
+.hero-content h1{
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-content p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-content button{
+    padding: 14px 30px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #b58cff, #8f5cff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-content button:hover{
+    transform: scale(1.05);
+}
+
+/* SEARCH */
+
+.search-section{
+    width: 65%;
+    margin: -27px;
+    justify-self: center;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+.search-section input{
+    width: 100%;
+    padding: 18px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* STATS */
+
+.stats{
+    width: 95%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 75px;
+    justify-content: center;
+}
+
+.card{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 15px #4e428a;
+}
+
+.card h2{
+    font-size: 38px;
+    color: #292929;
+}
+
+.card p{
+    margin-top: 10px;
+    color: #666;
+}
+
+/* EFECTO BARRA PORCENTAJE */
+
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background: #e6e0d5;
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+    border: 1px solid #dfd9ce;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #df9035 0%, #edd36b 100%);
+    border-radius: 4px;
+}
+
+
+/* CARTAS DE PETS */
+
+.pets{
+    width: 95%;
+    margin: 50px auto;
+}
+
+.pets h2{
+    margin-bottom: 25px;
+}
+
+.pet-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.pet-card {
+    background: #fbf6ee;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-card);
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 4px 12px rgba(0,0,0,0.03);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-top: 4px solid green;
+}
+
+.detalle-carta-pet {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fbf6ee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    background-color: #2c1d3f;
+}
+
+.pet-card:hover {
+    transform: translateY(-4px);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.pet-card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.pet-card h3{
+    margin-bottom: 10px;
+}
+
+.pet-card p{
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.pet-card button{
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #9b5cff;
+    color: white;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1000px){
+
+    .pet-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .stats{
+        grid-template-columns: 1fr;
+    }
+
+    nav{
+        display: none;
+    }
+
+}
+
+@media(max-width: 700px){
+
+    .hero-content h1{
+        font-size: 28px;
+    }
+
+    .pet-grid{
+        grid-template-columns: 1fr;
+    }
+
+}

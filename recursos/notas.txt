@@ -1,0 +1,41 @@
+Rares = Plateado
+Batalla = Rojo
+Tienda = Dorado
+Raid = Negro
+Logros = Café claro
+Misiones = Naranjo
+Reputación = Azúl
+Botín = Verde
+
+
+
+
+=========================================================
+<section class="stats">
+
+        <div class="card">
+            <div class="stat-header">
+                <h2>4,129</h2>
+                <span class="stat-title">Pets Coleccionadas</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 82%;"></div>
+            </div>
+            <div class="stat-footer">
+                <span>Progreso General</span>
+                <span class="font-gold">82%</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>1,811</h2>
+            <p>Pets Faltantes</p>
+        </div>
+
+        <div class="card">
+            <h2>9</h2>
+            <p>Expansiones Completadas</p>
+        </div>
+
+</section>
+=============================================================
