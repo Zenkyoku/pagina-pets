@@ -8,7 +8,13 @@ Reputación = Azúl
 Botín = Verde
 
 
-==================== TEST ==================
+==================== GIT ==================
+
+// Enviar a github
+
+git add .
+git commit -m "mensaje"
+git push
 
 =========================================================
 <section class="stats">
