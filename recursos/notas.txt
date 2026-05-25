@@ -13,7 +13,7 @@ Botín = Verde
 // Enviar a github
 
 git add .
-git commit -m "mensaje"
+git commit -m "borde"
 git push
 
 =========================================================
