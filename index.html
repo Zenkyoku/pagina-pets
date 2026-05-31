@@ -10,42 +10,32 @@
 </head>
 <body>
     <div class="contenedor-principal">
-        <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo">
-            <img src="img/WoW_icon.svg.png" >
-            <div>
-                <h2>WoW</h2><span>Maestro Pokewow</span>
+        <header class="navbar">
+            <section class="logo">
+                <img src="img/WoW_icon.svg.png" alt="Logo navegación" >
+                <h1>WoW</h1><span>Maestro Pokewow</span>
+            </section>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Colección</a>
+                <a href="#">Expansiones</a>
+                <a href="#">Logros</a>
+            </nav>
+            <div class="profile">
+                <span>Kyoku</span>
             </div>
-        </div>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Colección</a>
-            <a href="#">Expansiones</a>
-            <a href="#">Logros</a>
-        </nav>
-        <div class="profile">
-            <span>Kyoku</span>
-        </div>
-    </header>
-    <div class="nav-border"></div>
-    <section class="hero">
-
-        <div class="overlay"></div>
-
-        <div class="hero-content">
-            <h1>LA GUIA DEFINITIVA DE COLECCION PARA MASCOTAS DE WoW.</h1>
-            
-            <button>Conecta tu Battle.net</button>
-        </div>
-
-    </section>
-
-    <!-- SEARCH -->
+        </header>
+        <div class="nav-border"></div>
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>LA GUIA DEFINITIVA DE COLECCION PARA MASCOTAS DE WoW.</h1>
+                <button>Conecta tu Battle.net</button>
+            </div>
+        </section>
     <section class="search-section">
         <input type="text" placeholder="Buscar pets por nombre, zona o expansión...">
     </section>
-
     <section class="ejemplo">
         <h2>Ejemplo Guía de Pets</h2>
         <div class="ejemplo-anubisath">
@@ -53,29 +43,28 @@
         </div>
         <div class="ejemplo-grid">
             <div class="contenedor-mapa">
-                <img src="img/ping.svg" class="ping"  title="(46.95, 7.67)">
+                <img src="img/ping.svg" alt="Ping" class="ping"  title="(46.95, 7.67)">
             </div>
         </div>
         <div class="ejemplo-info">
-          <p>   <img src="img/icons8-rollo-mágico-50.png" >Esta página tendrá una guía completa sobre cómo obtener esta mascota.</p>
+          <p>   <img src="img/icons8-rollo-mágico-50.png" alt="Rollo Mágico" >Esta página tendrá una guía completa sobre cómo obtener esta mascota.</p>
             <br>
-            <p><img src="img/icons8-brújula-50.png" > A la izquierda estará el mapa con la ubicación de la pet, npc relevante, misión asociada o ubicación de raid.</p>
+            <p><img src="img/icons8-brújula-50.png" alt="Brújula" > A la izquierda estará el mapa con la ubicación de la pet, npc relevante, misión asociada o ubicación de raid.</p>
             <br>
-           <p>  <img src="img/actualizar.png" > A la derecha estará la información relevante sobre la pet, como su origen, expansión, tipo de mascota, rareza, etc.</p>
+           <p>  <img src="img/info.png" alt="Info" > A la derecha estará la información relevante sobre la pet, como su origen, expansión, tipo de mascota, rareza, etc.</p>
         </div>
     </section>
-    <!-- STATS -->
     <section class="stats" id="cartas">
         <div class="grid">
             <div class="card">
-                <img src="img/patita.png"  class="patita-carta">
+                <img src="img/patita.png" alt="Patita" class="patita-carta">
                 <div class="texto-carta">
                     <h2>2009</h2>
                     <p>Total de Mascotas Actual</p>
                 </div>
             </div>
             <div class="card">
-                <img src="img/medal_1710615.png"  class="patita-carta">
+                <img src="img/medallaa.png" alt="Medalla" class="patita-carta">
                 <div class="texto-carta">
                     <h2>89</h2>
                     <p>Mascotas de Logros</p>
@@ -83,65 +72,55 @@
             </div>
         </div>
     </section>
-
-    <!-- PETS -->
     <section class="pets">
-
         <h2>EXPLORAR MASCOTAS DESTACADAS</h2>
         <div class="pet-grid">
             <div class="pet-card batalla">
                 <div class="detalle-carta-pet"></div>
-                <img src="img/gurrumino zandalari.png" alt="Pet">
+                <img src="img/icono-bestia.png" alt="icono bestia" class="pet-icon">
+                <img src="img/gurrumino zandalari.png" alt="Gurrumino Zandalari" class="pet-card-image">
                 <h3>Gurrumino Zandalari</h3>
                 <div class="pet-info">
-                    <p><span>Origen:</span> <span class="color-uncommon">Batalla</span></p>
+                    <p><span>Origen:</span> <span>Batalla</span></p>
                     <p><span>Expansión:</span> <span>BFA</span></p>
                 </div>
                 <button class="btn-card">DETALLES</button>
             </div>
-
             <div class="pet-card batalla">
                 <div class="detalle-carta-pet"></div>
-                <img src="img/Val'kyr nonata.png" alt="Pet">
+                <img src="img/Val'kyr nonata.png" alt="Val'kyr nonata" class="pet-card-image">
                 <h3>Val'kyr nonata</h3>
                 <div class="pet-info">
-                    <p><span>Origen:</span> <span class="color-rare">Batalla</span></p>
+                    <p><span>Origen:</span> <span>Batalla</span></p>
                     <p><span>Expansión:</span> <span>WotLK</span></p>
                 </div>
                 <button class="btn-card">DETALLES</button>
             </div>
-
             <div class="pet-card raid">
                 <div class="detalle-carta-pet"></div>
-                <img src="img/idolo.png" alt="Pet">
+                <img src="img/idolo.png" alt="Idolo de Anubisath" class="pet-card-image">
                 <h3>Idolo de Anubisath</h3>
                 <div class="pet-info">
-                    <p><span>Origen:</span> <span class="color-epic">Raid</span></p>
+                    <p><span>Origen:</span> <span>Raid</span></p>
                     <p><span>Expansión:</span> <span>Cataclysm</span></p>
                 </div>
                 <button class="btn-card">DETALLES</button>
             </div>
-
             <div class="pet-card tienda">
                 <div class="detalle-carta-pet"></div>
-                <img src="img/imagen_2026-05-19_102315808-removebg-preview.png" alt="Pet">
+                <img src="img/mini ragnaros.png" alt="Mini Ragnaros" class="pet-card-image">
                 <h3>Mini Ragnaros</h3>
                 <div class="pet-info">
-                    <p><span>Origen:</span> <span class="color-rare">Tienda</span></p>
+                    <p><span>Origen:</span> <span>Tienda</span></p>
                     <p><span>Expansión:</span> <span>Cataclysm</span></p>
                 </div>
                 <button class="btn-card">DETALLES</button>
             </div>
-
         </div>
-    </div>
-
-
+        <footer>
+            <p>&copy; 2026 WoW Pet Collector. Todos los derechos reservados.</p>
+        </footer>
     </section>
-    <footer>
-       <p>&copy; 2026 WoW Pet Collector. Todos los derechos reservados.</p>
-    </footer>
     </div>
-
 </body>
 </html>

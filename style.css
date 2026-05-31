@@ -1,5 +1,3 @@
-/* style.css */
-
 *{
     margin: 0;
     padding: 0;
@@ -7,15 +5,13 @@
 }
 
 body{
-    background-image: url(img/Gemini_Generated_Image_b9gmt0b9gmt0b9gm.png);
+    background-image: url(img/Fondo-pagina.png);
     font-family: 'Cinzel', serif;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
-
-
+/* CONTENEDOR DE TODO */
 .contenedor-principal {
     position: relative;
     overflow: hidden;
@@ -30,7 +26,7 @@ body{
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.644);
 }
-
+/* RUIDO VISUAL */
 .contenedor-principal::before {
     content: "";
     position: absolute;
@@ -47,7 +43,7 @@ body{
     background-size: 4px 4px;
 }
 
-/* NAVBAR */
+/* BARRA DE NAVEGACIÓN */
 
 .navbar{
     width: 100%;
@@ -57,7 +53,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 15px 15px #3b3752;
+    box-shadow: 8px 8px 15px #4e428a;
     margin-bottom: 30px;
     border-radius: 10px;
 }
@@ -68,12 +64,12 @@ body{
     align-items: center;
     gap: 10px;
 }
-
+/* ANCHO DEL LOGO */
 .logo img{
     width: 50px;
 }
 
-.logo h2 {
+.logo h1 {
     font-family: 'Cinzel', serif;
     font-size: 20px;    
     font-weight: 700;
@@ -86,11 +82,12 @@ body{
     font-size: 14px;
     color: #666;
 }
-
+/* ELEMENTOS DE NAVEGACIÓN */
 nav{
     display: flex;
     gap: 25px;
-    margin-left: -100px;
+    left: 50%;
+    transform: translateX(-20%);
 }
 
 nav a{
@@ -112,18 +109,15 @@ nav a:hover{
     gap: 10px;
 }
 
-.profile img{
-    border-radius: 50%;
-}
 
-/* HERO */
+/* HERO - BANNER */
 
 .hero{
     width: 100%;
     height: 420px;
     margin: auto;
 
-    background-image: url("https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/m7/M7HH8J62VVUG1711406860146.png");
+    background-image: url("img/banner.png");
 
     background-size: cover;
     background-position: center;
@@ -136,7 +130,7 @@ nav a:hover{
     justify-content: center;
 
     border-radius: 10px;
-    box-shadow: 0px 22px 30px #4e428a;
+    box-shadow: 8px 8px 15px #4e428a;
 }
 
 .overlay{
@@ -198,7 +192,7 @@ nav a:hover{
     outline: none;
     font-size: 16px;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 8px 8px 15px #4e428a;
 }
 
 /* EJEMPLO */
@@ -213,6 +207,8 @@ nav a:hover{
     border-radius: 15px;
     padding-bottom: 40px;
     background: rgba(255,255,255,0.2);
+    margin-top: 60px;
+    box-shadow: 2px 8px 15px #4e428a;
 }
 
 .ejemplo h2{
@@ -241,7 +237,7 @@ nav a:hover{
     background-size: 100% 100%;
 
     border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 15px #4e428a;
 
     
 }
@@ -252,7 +248,7 @@ nav a:hover{
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 15px #4e428a;
 }
 
 .contenedor-mapa:hover{
@@ -265,14 +261,16 @@ nav a:hover{
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #9b5cff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 8px 8px 15px #4e428a;
     margin-left: 50px;
-    justify-self: right;
+    background: #b18fcc;
 }
 .ejemplo-anubisath{
     display: flex;
     justify-content: right;
+    margin-top: -60px;
+    margin-bottom: 10px;
+    margin-right: -25px;
 }
 
 .ejemplo-info{
@@ -287,7 +285,8 @@ nav a:hover{
     background: #b18fcc;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 15px #4e428a;
+    margin-right: 30px;
 }
 
 .ejemplo-info img{
@@ -340,6 +339,7 @@ nav a:hover{
     padding: 30px;
     border-radius: 20px;
     box-shadow: 8px 8px 15px #4e428a;
+    transition: transform 0.2s;
 }
 
 .card h2{
@@ -353,30 +353,16 @@ nav a:hover{
     margin: 0;
 }
 
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 8px 8px 15px #4e428a;
+}
+
 .patita-carta{
     position: relative;
     width: 80px;
     margin: 0;
 }
-
-/* EFECTO BARRA PORCENTAJE */
-
-.progress-bar-container {
-    width: 100%;
-    height: 8px;
-    background: #e6e0d5;
-    border-radius: 4px;
-    margin-top: 10px;
-    overflow: hidden;
-    border: 1px solid #dfd9ce;
-}
-
-.progress-bar {
-    height: 100%;
-    background: linear-gradient(90deg, #df9035 0%, #edd36b 100%);
-    border-radius: 4px;
-}
-
 
 /* CARTAS DE PETS */
 
@@ -401,25 +387,29 @@ nav a:hover{
     background: #fbf6ee;
     padding: 20px;
     border-radius: 12px;
-    border: 1px solid var(--border-card);
     text-align: center;
     position: relative;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 4px 12px rgba(0,0,0,0.03);
-    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 8px 8px 15px #4e428a;
+    transition: transform 0.2s;
     border-top: 4px solid var(--color-borde);
+    margin-bottom: 40px;
 }
+
 
 .pet-card.rare {
     --color-borde: #c0c0c0; /* Plateado */
 }
 .pet-card.batalla {
-    --color-borde: #ff0000; /* Rojo */
+    --color-borde: #BD1414; /* Rojo */
+    --color-detalle: white;
 }
 .pet-card.tienda {
-    --color-borde: #ffd700; /* Dorado */
+    --color-borde: #eed952; /* Dorado */
+    --color-detalle: rgb(97, 58, 102);
 }
 .pet-card.raid {
-    --color-borde: #000000; /* Negro */
+    --color-borde: #1d1c1c; /* Negro */
+    --color-detalle: white;
 }
 
 .pet-card.logro {
@@ -445,17 +435,17 @@ nav a:hover{
     transform: translateX(-50%) rotate(45deg);
     width: 14px;
     height: 14px;
-    border: 2px solid #fbf6ee;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-    background-color: #2c1d3f;
+    border: 2px solid var(--color-detalle);
+    box-shadow: 4px 4px 8px #4e428a;    
+    background-color: var(--color-borde);
 }
 
 .pet-card:hover {
     transform: translateY(-4px);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 8px 8px 15px #4e428a;
 }
 
-.pet-card img{
+.pet-card-image {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -478,7 +468,21 @@ nav a:hover{
     background: #9b5cff;
     color: white;
     cursor: pointer;
+    box-shadow: 4px 4px 8px #4e428a;
 }
+
+.pet-icon {
+    position: absolute;
+    background: #000000;
+    left: 10px;
+    top: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border: var(--color-borde) 2px solid;
+}
+
 
 footer{
     text-align: center;
@@ -486,8 +490,13 @@ footer{
     background: rgba(255,255,255,0.7);
     backdrop-filter: blur(10px);
     margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 15px 15px #3b3752;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 8px 8px 15px #4e428a;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
 
 /* RESPONSIVE */
