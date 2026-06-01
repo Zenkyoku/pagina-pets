@@ -173,17 +173,16 @@ nav a:hover{
     transform: scale(1.05);
 }
 
-/* SEARCH */
+/* BARRA DE BÚSQUEDA */
 
 .search-section{
     width: 65%;
-    margin: -27px;
+    margin-top: -27px;
     justify-self: center;
     position: relative;
     z-index: 10;
-    margin-bottom: 20px;
 }
-
+/* CAJA DE TEXTO DE BÚSQUEDA */
 .search-section input{
     width: 100%;
     padding: 18px;
@@ -231,7 +230,6 @@ nav a:hover{
     max-width: 100%;
     aspect-ratio: 550 / 360;
     background-image: url(/img/silithus.png);
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -256,7 +254,7 @@ nav a:hover{
     transition: transform 0.3s;
 }
 
-.anubisath{
+.anubisath-imagen{
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -279,7 +277,7 @@ nav a:hover{
     z-index: 2;
     justify-self: left;
 }
-
+/* PARRAFO INFO */
 .ejemplo-info p{
     font-size: 18px;
     background: #b18fcc;
@@ -288,7 +286,7 @@ nav a:hover{
     box-shadow: 8px 8px 15px #4e428a;
     margin-right: 30px;
 }
-
+/* ICONOS DEL TEXTO DE INFO */
 .ejemplo-info img{
     width: 30px;
     vertical-align: left;
@@ -308,13 +306,13 @@ nav a:hover{
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-
+/*ANIMACIÓN DEL PING */
 .ping:hover{
     transform: translate(-50%, -50%) scale(1.5);
     transition: transform 0.3s;
 }
 
-/* STATS */
+/* CARTA DE LOGRO Y MASCOTA ACTUAL */
 
 .stats{
     width: 95%;
@@ -483,7 +481,7 @@ nav a:hover{
     border: var(--color-borde) 2px solid;
 }
 
-
+/* BARRA DE ABAJO*/
 footer{
     text-align: center;
     padding: 20px;
@@ -499,7 +497,7 @@ footer{
     left: 0;
 }
 
-/* RESPONSIVE */
+/* ACOMODA LA PÁGINA */
 
 @media(max-width: 1000px){
 
