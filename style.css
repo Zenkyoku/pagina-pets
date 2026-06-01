@@ -20,8 +20,8 @@ body{
       rgba(187, 137, 214, 0.8) 50%,
        rgba(191, 148, 214, 0.9) 75%,
         rgba(204, 186, 220, 1) 100%);
-    width: 90%;
-    margin: 45px;
+    width: min(1400px, 95%);
+    margin: 20px auto;
     justify-self: center;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.644);
@@ -497,32 +497,214 @@ footer{
     left: 0;
 }
 
-/* ACOMODA LA PÁGINA */
+/* RESPUESTA DINAMICA PARA DISPOSITIVOS DISTINTOS */
 
-@media(max-width: 1000px){
+@media (max-width: 1024px){
 
-    .pet-grid{
-        grid-template-columns: repeat(2,1fr);
+    .contenedor-principal{
+        width: 95%;
+        margin: 20px auto;
     }
 
-    .stats{
-        grid-template-columns: 1fr;
+    .navbar{
+        padding: 15px 20px;
     }
 
     nav{
-        display: none;
+        gap: 15px;
+        transform: none;
     }
 
+    .hero-content h1{
+        font-size: 36px;
+    }
+
+    .search-section{
+        width: 80%;
+    }
+
+    .ejemplo{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .ejemplo-anubisath{
+        justify-content: center;
+        margin: 0 0 20px 0;
+    }
+
+    .ejemplo-info{
+        justify-self: center;
+        width: 100%;
+    }
+
+    .ejemplo-info p{
+        margin-right: 0;
+    }
+
+    .contenedor-mapa{
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, minmax(250px, 350px));
+        gap: 30px;
+    }
+
+    .pet-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media(max-width: 700px){
+@media (max-width: 768px){
+
+    .contenedor-principal{
+        width: 98%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .profile{
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .hero{
+        height: 320px;
+    }
+
+    .hero-content{
+        padding: 0 15px;
+    }
 
     .hero-content h1{
         font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero-content button{
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .search-section{
+        width: 95%;
+        margin-top: -20px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card{
+        text-align: center;
+        justify-content: center;
     }
 
     .pet-grid{
         grid-template-columns: 1fr;
     }
 
+    .pets h2{
+        text-align: center;
+    }
+
+    .ejemplo h2{
+        font-size: 24px;
+    }
+
+    .ejemplo-info p{
+        font-size: 16px;
+    }
+
+    .anubisath-imagen{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px){
+
+    .logo img{
+        width: 40px;
+    }
+
+    .logo h1{
+        font-size: 18px;
+    }
+
+    .logo span{
+        font-size: 12px;
+    }
+
+    .hero{
+        height: 260px;
+    }
+
+    .hero-content h1{
+        font-size: 22px;
+    }
+
+    .hero-content button{
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .search-section input{
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .card{
+        padding: 20px;
+    }
+
+    .card h2{
+        font-size: 30px;
+    }
+
+    .patita-carta{
+        width: 60px;
+    }
+
+    .pet-card{
+        padding: 15px;
+    }
+
+    .pet-card-image{
+        width: 80px;
+        height: 80px;
+    }
+
+    .pet-card h3{
+        font-size: 18px;
+    }
+
+    .ejemplo-info p{
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .ejemplo-info img{
+        width: 24px;
+    }
+
+    .contenedor-mapa{
+        width: 100%;
+    }
 }
