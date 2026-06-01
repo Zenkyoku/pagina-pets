@@ -499,102 +499,6 @@ footer{
 
 /* RESPUESTA DINAMICA PARA DISPOSITIVOS DISTINTOS */
 
-@media (max-width: 1366px){
-
-    .contenedor-principal{
-        width: 98%;
-        margin: 10px auto;
-        padding: 15px;
-    }
-
-    .navbar{
-        gap: 15px;
-        text-align: center;
-    }
-
-    nav{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .profile{
-        border-left: none;
-        padding-left: 0;
-    }
-
-    .hero{
-        height: 320px;
-    }
-
-    .hero-content{
-        padding: 0 15px;
-    }
-
-    .hero-content h1{
-        font-size: 28px;
-        line-height: 1.2;
-    }
-
-    .hero-content button{
-        width: 100%;
-        max-width: 280px;
-    }
-
-    .search-section{
-        width: 95%;
-        margin-top: -20px;
-    }
-
-    .grid{
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .card{
-        text-align: center;
-        justify-content: center;
-    }
-
-    .pet-grid{
-        grid-template-columns: 1fr;
-    }
-
-    .pets h2{
-        text-align: center;
-    }
-
-    .ejemplo{
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-    
-    .ejemplo-info{
-        width: 100%;
-        max-width: 100%;
-        z-index: auto;
-        margin-top: 20px;
-    }
-
-    .ejemplo h2{
-        font-size: 24px;
-    }
-
-    .ejemplo-info p{
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    .ejemplo-anubisath{
-        justify-content: center;
-        margin: 0;
-    }
-
-    .anubisath-imagen{
-        margin-left: 0;
-    }
-}
-
 @media (max-width: 1024px){
 
     .contenedor-principal{
@@ -721,30 +625,12 @@ footer{
         text-align: center;
     }
 
-    .ejemplo{
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-    
-    .ejemplo-info{
-        width: 100%;
-        max-width: 100%;
-        z-index: auto;
-        margin-top: 20px;
-    }
-
     .ejemplo h2{
         font-size: 24px;
     }
 
     .ejemplo-info p{
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    .ejemplo-anubisath{
-        justify-content: center;
-        margin: 0;
+        font-size: 16px;
     }
 
     .anubisath-imagen{
