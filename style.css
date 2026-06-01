@@ -499,7 +499,7 @@ footer{
 
 /* RESPUESTA DINAMICA PARA DISPOSITIVOS DISTINTOS */
 
-@media (max-width: 1280px){
+@media (max-width: 1366px){
 
     .contenedor-principal{
         width: 98%;
@@ -508,7 +508,6 @@ footer{
     }
 
     .navbar{
-        flex-direction: column;
         gap: 15px;
         text-align: center;
     }
