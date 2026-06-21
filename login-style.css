@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/Fondo-pagina.png);
+    font-family: 'Cinzel', serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* CONTENEDOR DE TODO */
+.contenedor-principal {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg,rgba(204, 186, 220, 1) 0%,
+     rgba(191, 148, 214, 0.9) 25%,
+      rgba(187, 137, 214, 0.8) 50%,
+       rgba(191, 148, 214, 0.9) 75%,
+        rgba(204, 186, 220, 1) 100%);
+    width: min(1400px, 95%);
+    margin: 20px auto;
+    justify-self: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.644);
+}
+/* RUIDO VISUAL */
+.contenedor-principal::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(
+            rgba(255,255,255,0.07) 1px,
+            transparent 1px
+        );
+
+    background-size: 4px 4px;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.navbar{
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 8px 8px 15px #4e428a;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* ANCHO DEL LOGO */
+.logo img{
+    width: 50px;
+}
+
+.logo h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;    
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 8px rgba(168, 78, 209, 0.8);
+    color: #201f20;
+}
+
+.logo span{
+    font-size: 14px;
+    color: #666;
+}
+/* ELEMENTOS DE NAVEGACIÓN */
+nav{
+    display: flex;
+    gap: 25px;
+    left: 50%;
+    transform: translateX(-20%);
+}
+
+nav a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #9b5cff;
+}
+
+.profile{
+    border-left: 1px solid #71689C;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedor-login {
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.modo-oscuro{
+    background-color: #1a1629;
+}
+
+.modo-oscuro .contenedor-principal{
+    background: #2b2340;
+    color: white;
+}
+
+.modo-oscuro .card,
+.modo-oscuro .pet-card,
+.modo-oscuro .navbar,
+.modo-oscuro footer{
+    background: #3a3158;
+    color: white;
+}
+
+.error{
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+#mensajeExito{
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
