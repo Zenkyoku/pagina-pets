@@ -121,8 +121,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         event.preventDefault();
 
+        // Capture data before resetting the form
+        const datosGuardar = {
+            nombre: nombre.value,
+            email: email.value,
+            edad: edad.value,
+        };
+
         document.getElementById("mensajeExito").textContent =
             `¡Bienvenido al gremio, ${nombre.value}!`;
+
+        guardarFormulario(datosGuardar);
+        habilitarRegistros();
 
         formulario.reset();
 
@@ -134,4 +144,23 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("errorTerminos").textContent = "";
     }
 
+    function guardarFormulario(datos) {
+
+        const cuerpoTabla = document.getElementById("cuerpoTabla");
+        
+        const fila = document.createElement("tr");
+        fila.innerHTML = `
+            <td>${datos.nombre}</td>
+            <td>${datos.email}</td>
+            <td>${datos.edad}</td>
+        `;
+        
+        cuerpoTabla.appendChild(fila);
+    };
+
+    function habilitarRegistros() {
+
+        const tabla = document.getElementById("tablaRegistros");
+        tabla.style.display = "table"
+    }
 });

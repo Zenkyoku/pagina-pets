@@ -114,8 +114,166 @@ nav a:hover{
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
+.contenedor-login h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.contenedor-login p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.formulario div {
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    margin-left: 6.3%;
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario input[type="email"] {
+    width: 80%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    padding: 10px 20px;
+    background-color: #facdfcb3;
+    color: #2b2340;
+    border: 1px solid #7a3dbd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #7a3dbd;
+}
+
+.formulario button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* CONTENEDOR DE LA TABLA */
+.tabla{
+    width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 0 10px rgba(78,66,138,.4),
+        inset 0 0 15px rgba(255,255,255,.3);
+
+    border-radius: 10px;
+}
+
+/* TABLA */
+.tabla table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* TÍTULOS */
+.tabla thead th{
+    padding: 4px;
+
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #3a2a18;
+
+    background: #facdfcb3;
+
+    border: 2px solid #7a3dbd;
+
+    text-shadow: 1px 1px rgba(255,255,255,.5);
+}
+
+/* CELDAS */
+.tabla tbody td{
+    padding: 12px;
+
+    background: rgba(255,255,255,0.55);
+
+    border: 1px solid rgba(139,109,59,.4);
+
+    color: #2c2c2c;
+
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* FILAS */
+.tabla tbody tr:hover{
+    background: rgba(177,143,204,.2);
+    transition: 0.3s;
+}
+
+/* TABLA VACÍA */
+.tabla tbody:empty::after{
+    content: "Aún no hay aventureros registrados";
+    display: table-row;
+    text-align: center;
+
+    color: #666;
+
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* PRIMERA Y ÚLTIMA ESQUINA */
+.tabla thead th:first-child{
+    border-top-left-radius: 8px;
+}
+
+.tabla thead th:last-child{
+    border-top-right-radius: 8px;
+}
+
+/* MODO OSCURO */
+
+.boton-tema {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    background-color: #facdfcb3;
+    color: #2b2340;
+    border: 1px solid #7a3dbd;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
 
 .modo-oscuro{
     background-color: #1a1629;
@@ -123,26 +281,50 @@ nav a:hover{
 
 .modo-oscuro .contenedor-principal{
     background: #2b2340;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+
+.modo-oscuro .logo h1,
+.modo-oscuro .logo span,
+.modo-oscuro nav a,
+.modo-oscuro .profile span{
+    color: #d1c0e0;
+}
+
+.modo-oscuro h2,
+.modo-oscuro p,
+.modo-oscuro a{
+    color: #d1c0e0;
 }
 
 .modo-oscuro .card,
 .modo-oscuro .pet-card,
 .modo-oscuro .navbar,
-.modo-oscuro footer{
+.modo-oscuro footer,
+.modo-oscuro .contenedor-login,
+.modo-oscuro #mensajeExito
+{
     background: #3a3158;
-    color: white;
+    color: #d1c0e0;
 }
 
-.error{
-    color: red;
+.modo-oscuro .error{
+    color: #e62b88;
+}
+
+.modo-oscuro .tabla{
+    background: #d1c0e0;
+}
+
+.error{ 
+    color: #b14328;
     font-size: 14px;
     display: block;
     margin-top: 5px;
 }
 
 #mensajeExito{
-    color: green;
+    color: #2b2340;
     font-weight: bold;
     margin-top: 15px;
 }
