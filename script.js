@@ -1,25 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
-
+    // Mostrar saludo según la hora del día - La funcion determina el saludo.
     mostrarSaludo();
 
+    // Constantes para elementos del documento; se asignan para el uso dentro del script
     const formulario = document.getElementById("formulario");
     const btnEnviar = document.getElementById("btnEnviar");
     const btnTema = document.getElementById("btnTema");
-
     const nombre = document.getElementById("nombre");
     const email = document.getElementById("email");
     const edad = document.getElementById("edad");
     const terminos = document.getElementById("terminos");
 
+    // Agregar eventos 'listener' o 'de escucha' a los elementos, para los mensajes de error.
     nombre.addEventListener("input", verificarFormulario);
     email.addEventListener("input", verificarFormulario);
     edad.addEventListener("input", verificarFormulario);
     terminos.addEventListener("change", verificarFormulario);
-
     btnTema.addEventListener("click", cambiarTema);
-
     formulario.addEventListener("submit", enviarFormulario);
 
+    // Función para mostrar un saludo según la hora del día; llamada al inicio.
     function mostrarSaludo() {
 
         const saludo = document.getElementById("saludo");
@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // Función para cambiar el tema de la página entre modo claro y modo oscuro, también cambia el texto del botón según el modo activo.
     function cambiarTema() {
 
         document.body.classList.toggle("modo-oscuro");
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // Funciones de validación para cada campo del formulario; muestran mensajes de error si los datos no son válidos. Nombre, Email, Edad y Términos.
     function validarNombre() {
 
         const error = document.getElementById("errorNombre");
@@ -117,6 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
+    // Función para enviar el formulario; captura los datos (datosGuardar), muestra un mensaje de éxito (mensajeExito), guarda los datos en la tabla (guardarFormulario) y habilita la visualización de los registros (habilitarRegistros).
     function enviarFormulario(event) {
 
         event.preventDefault();
@@ -158,6 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cuerpoTabla.appendChild(fila);
     };
 
+    // Función para habilitar la vistibilidad de la tabla de registros; cambia el estilo de la tabla para que sea visible; Llamada al enviar el formulario.
     function habilitarRegistros() {
 
         const tabla = document.getElementById("tablaRegistros");
